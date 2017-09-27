@@ -1,10 +1,12 @@
 #include <Keyboard.h>
 
-  int lastPin10 = 0;
-  int lastPin9 = 0;
+int lastPin10 = 0;
+int lastPin9 = 0;
 
 void setup() {
-
+  pinMode(10, INPUT_PULLUP);
+  pinMode(9, INPUT_PULLUP);
+  Keyboard.begin();
 }
 
 void loop() {
